@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://r8jkupqoduha"]
+
+[ext_resource type="PackedScene" uid="uid://q3bjaxmrfue5" path="res://scenes/player.tscn" id="1_11qv7"]
+[ext_resource type="Script" path="res://scenes/main.gd" id="1_khwlu"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_khwlu")
+
+[node name="Player" parent="." instance=ExtResource("1_11qv7")]
+z_index = 1
+SPEED = 100.0
+
+[node name="HUD" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="HUD"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Test Label:"

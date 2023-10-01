@@ -1,0 +1,25 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://dd6wfilidbhx0"]
+
+[ext_resource type="Texture2D" uid="uid://dgqca3tq25eli" path="res://resources/world/world.png" id="1_j2n5m"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dru8j"]
+texture = ExtResource("1_j2n5m")
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0 = 0
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.93333, -8, 6.93333, -8, 6.93333, 8, -6.93333, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:0/0/physics_layer_0/angular_velocity = 0.0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -6.93333, 8, -6.93333, 8, 8, -8, 8)
+
+[resource]
+physics_layer_0/collision_layer = 9
+physics_layer_0/collision_mask = 6
+sources/0 = SubResource("TileSetAtlasSource_dru8j")
